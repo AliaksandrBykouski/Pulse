@@ -1,2 +1,10 @@
-@import "normalize.css";
-@import "variables.scss";
+@use "normalize.css";
+@use "base/variables";
+@use "base/mixins";
+* {
+  font-family: "MuseoModerno", sans-serif;
+}
+.comtainer {
+  min-width: 950px;
+  margin: 0 auto;
+}
