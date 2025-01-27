@@ -1,10 +1,14 @@
 @use "normalize.css";
 @use "base/variables";
 @use "base/mixins";
+@use "blocks/promo.scss";
+@use "blocks/header.scss";
+@use "blocks/buttons.scss";
 * {
   font-family: "MuseoModerno", sans-serif;
 }
-.comtainer {
-  min-width: 950px;
+
+.container {
+  max-width: 950px;
   margin: 0 auto;
 }
