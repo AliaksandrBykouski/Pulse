@@ -5,8 +5,11 @@
 @use "blocks/header.scss";
 @use "blocks/buttons.scss";
 @use "blocks/advantages.scss";
+@use "blocks/consultation.scss";
+@use "blocks/forms.scss";
 * {
   font-family: "MuseoModerno", sans-serif;
+  box-sizing: border-box;
 }
 
 .container {
