@@ -7,14 +7,14 @@
   color: rgb(255, 255, 255);
   font-size: 12px;
   font-weight: 500;
-  line-height: 19px;
+  // line-height: 19px;
   text-align: center;
   text-transform: uppercase;
   position: relative; //!!!
   cursor: pointer;
   &::before {
     content: "";
-    width: 20px;
+    width: 30px;
     height: 2px;
     position: absolute;
     left: 0;
@@ -36,10 +36,10 @@
   }
   &:hover {
     &::before {
-      left: calc(100% - 20px);
+      left: calc(100% - 35px);
     }
     &::after {
-      right: calc(100% - 20px);
+      right: calc(100% - 35px);
     }
   }
   &_main {
