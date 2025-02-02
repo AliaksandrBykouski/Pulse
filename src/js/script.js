@@ -23,7 +23,16 @@ function showTab(index) {
   document.querySelectorAll(".catalog-button").forEach((tab, i) => {
     tab.classList.toggle("active", i === index);
   });
-  document.querySelectorAll(".catalog__card").forEach((container, i) => {
+  document.querySelectorAll(".catalog__wrapper").forEach((container, i) => {
     container.classList.toggle("active", i === index);
   });
 }
+// modal windows
+document.querySelectorAll("[data-modal-open]").forEach((button) => {
+  button.addEventListener("click", function () {
+    document.getElementById("overlay").style.display =
+      document.getElementById("overlay").style.display === "flex"
+        ? "none"
+        : "flex";
+  });
+});
